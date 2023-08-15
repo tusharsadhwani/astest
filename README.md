@@ -70,6 +70,30 @@ Test 3..................................................................PASSED
 ===================== 1 failed, 2 passed in 0.00 seconds =====================
 ```
 
+## FAQ
+
+- **Why not `pytest`?**
+
+  For a very simple project (eg. that only exposes one function), having to define
+  several separate test functions or using something like `pytest.mark.parametrize`
+  to write a test suite seemed overkill.
+
+  I was wondering if just "a bunch of asserts" can be turned into a test suite.
+  Turns out you can. 
+
+- **Weird name.**
+
+  That's not a question, but yes.
+
+- **What does the name mean / How do you pronounce it?**
+
+  It can mean a few things:
+  - `assert` tests
+  - AST test (the package heavily relies on the AST module to work while remaining fast)
+  - A simple test library
+
+  I'll leave you to decide on the pronunciation.
+
 ## Local Development / Testing
 
 - Create and activate a virtual environment
